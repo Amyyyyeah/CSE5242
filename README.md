@@ -1,6 +1,6 @@
 # Project 2 | CSE 5242 (AU2024) 
 
-
+To compile the `db5242.c` file, use the following command:
 ```shell
 gcc -O3 -mavx2 -o db5242 db5242.c
 ```
