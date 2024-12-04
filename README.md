@@ -15,7 +15,6 @@ chmod +x (script_name)
 ## Compile
 
 ```shell
-#!/bin/bash
 ./db5242 10 50 50 100000 1000000
 ./db5242 10 50 50 100000 500000
 ./db5242 10 50 50 100000 100000
@@ -39,7 +38,6 @@ chmod +x (script_name)
 # (h) Profiling the code of band join
 ## Compile
 ```shell
-#!/bin/bash
 
 for Z in 10 100 1000 10000 100000 1000000; do
         echo "Testing with Z=$Z"
