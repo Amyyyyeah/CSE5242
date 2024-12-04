@@ -3,12 +3,20 @@
 To compile the `db5242.c` file, use the following command:
 ```shell
 gcc -O3 -mavx2 -o db5242 db5242.c
+
 ```
+To proceed on using the script provided below, make sure to change the permission by using below.
+```shell
+chmod +x (script_name)
+```
+
 
 # (g) Profiling the code of binary search
 ## Compile
 
 ```shell
+#!/bin/bash
+
 for N in 10 100 1000 10000 100000 1000000; do
   echo "Testing with N=$N"
   for R in 10 100 1000 10000; do
@@ -21,5 +29,15 @@ done
 # (h) Profiling the code of band join
 ## Compile
 ```shell
+#!/bin/bash
+
+for Z in 10 100 1000 10000 100000 1000000; do
+        echo "Testing with Z=$Z"
+
+        for i in {1..10}
+        do
+                ./db5242 8192 16384 7001 $Z
+        done
+done
 ```
 
